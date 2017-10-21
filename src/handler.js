@@ -58,7 +58,7 @@ var data = [
 // etc.) The JSON body of the request is provided in the event parameter.
 
 
-exports.handler = function(event, context, callback) {
+exports.main = function(event, context, callback) {
     var alexa = Alexa.handler(event, context, callback);
     alexa.appId = APP_ID;
     alexa.registerHandlers(handlers);

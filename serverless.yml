@@ -15,7 +15,7 @@ package:
 
 functions:
   skill:
-    handler: src/handler.handler
+    handler: src/handler.main
     description: PMP function
     events:
       - alexaSkill
