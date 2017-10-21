@@ -8,18 +8,12 @@ var Alexa = require('alexa-sdk');
 var APP_ID = "amzn1.ask.skill.8bc9a7a3-6c83-4d35-a763-46bd5d102139";
 
 
-var FACTS = [
-          'There are 200 total multiple choice questions which make up the PMP exam',
-          '25 randomly placed pretest questions are included, and do not count towards the pass/fail determination',
-          'Students have 4 hours to complete the exam',
-          'Students must score 61% or higher to pass the exam (106 of 175 questions)',
-          'Students may bring blank “scratch” paper with which to draft responses, such as for formula based exam questions.'
-      ];
-var SKILL_NAME = 'PMP Facts';
-var GET_FACT_MESSAGE= "Here's your fact: ";
-var HELP_MESSAGE= 'You can say tell me a PMP fact, or, you can say quiz game, or, you can say exit... Which would you like?';
-var HELP_REPROMPT='What can I help you with?';
-var STOP_MESSAGE = 'Goodbye!';
+const FACTS = require('data/facts.json');
+const SKILL_NAME = 'PMP Facts';
+const GET_FACT_MESSAGE= "Here's your fact: ";
+const HELP_MESSAGE= 'You can say tell me a PMP fact, or, you can say quiz game, or, you can say exit... Which would you like?';
+const HELP_REPROMPT='What can I help you with?';
+const STOP_MESSAGE = 'Goodbye!';
 
 
 // //Adding greater variety to endSession
@@ -58,11 +52,12 @@ var data = [
 // etc.) The JSON body of the request is provided in the event parameter.
 
 
-exports.main = function(event, context, callback) {
+exports.handler = function(event, context, callback) {
     var alexa = Alexa.handler(event, context, callback);
     alexa.appId = APP_ID;
     alexa.registerHandlers(handlers);
     alexa.execute();
+    callback(null, "success");
 };
 var handlers = {
     //This skill will receive a LaunchRequest when the user invokes the skill with the invocation name, but does not provide any command mapping to an intent. For example, open PMPnow
