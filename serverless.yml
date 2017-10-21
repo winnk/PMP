@@ -1,0 +1,21 @@
+service: pmp
+frameworkVersion: ">=1.4.0 <2.0.0"
+
+provider:
+  name: aws
+  runtime: nodejs4.3
+  region: us-east-1
+
+package:
+    include:
+      - ./src/node_modules
+    exclude:
+      - .serverless/**
+    deDevDependencies: false
+
+functions:
+  skill:
+    handler: src/handler.handler
+    description: PMP function
+    events:
+      - alexaSkill

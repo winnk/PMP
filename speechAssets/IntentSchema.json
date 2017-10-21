@@ -1,0 +1,94 @@
+{
+    "intents": [
+      {
+        "name": "AboutIntent", "slots": []
+      },
+    {
+        "name": "AMAZON.CancelIntent",
+        "samples": []
+    },
+    {
+        "name": "AMAZON.HelpIntent",
+        "samples": []
+    },
+    {
+        "name": "AMAZON.NextIntent",
+        "samples": []
+    },
+    {
+        "name": "AMAZON.NoIntent",
+        "samples": []
+    },
+    {
+        "name": "AMAZON.PauseIntent",
+        "samples": []
+    },
+    {
+        "name": "AMAZON.RepeatIntent",
+        "samples": []
+    },
+    {
+        "name": "AMAZON.StartOverIntent",
+        "samples": []
+    },
+    {
+        "name": "AMAZON.StopIntent",
+        "samples": []
+    },
+    {
+        "name": "AMAZON.YesIntent",
+        "samples": []
+    },
+    {
+        "name": "InputsIntent",
+        "samples": [
+          "Those damn inputs",
+          "Let's do inputs",
+          "Start inputs",
+          "Begin inputs",
+          "Launch inputs",
+          "Do inputs",
+          "Practice inputs",
+          "How about inputs",
+          "Let's work on inputs"
+        ],
+        "slots": []
+    },
+    {
+        "name": "DefinitionsIntent",
+        "samples": [
+            "terms",
+            "definitions"
+        ],
+        "slots": []
+    },
+    {
+      "name": "GetNewFactIntent",
+      "samples": [
+        "give me an exam fact",
+        "a certification fact",
+        "facts about the exam",
+        "facts about the test",
+        "facts about the certification",
+        "Tell me a project management fact",
+        "give me a project management fact",
+        "how about a project management fact",
+        "tell me something",
+        "tell me an exam fact",
+        "tell me a test fact",
+        "tell me a certification fact"
+      ],
+      "slots": []
+    },
+    {
+        "name": "QuizIntent",
+        "samples": [
+            "start quiz",
+            "quiz",
+            "do quiz",
+            "begin quiz"
+        ],
+        "slots": []
+    }
+]
+}

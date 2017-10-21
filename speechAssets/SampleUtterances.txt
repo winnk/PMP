@@ -1,0 +1,24 @@
+AboutIntent about
+AboutIntent tell me about this place
+
+GetNewFactIntent tell me a fact
+GetNewFactIntent give me a fact
+GetNewFactIntent learn some facts
+GetNewFactIntent facts
+GetNewFactIntent fact
+
+GoodbyeIntent Stop
+GoodbyeIntent I'm done
+GoodbyeIntent quit
+
+
+InputIntent Those damn inputs
+InputIntent Let's do inputs
+InputIntent Start inputs
+InputIntent Begin inputs
+InputIntent Launch inputs
+InputIntent Do inputs
+InputIntent Practice inputs
+InputIntent Let's work on inputs
+InputIntent How about inputs
+InputIntent Play inputs

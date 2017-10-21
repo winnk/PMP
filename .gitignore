@@ -1,0 +1,52 @@
+# Compiled source #
+############
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+.env
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+.lambda
+alexa-skills-kit-sdk-for-nodejs/
+src/node_modules/
+node_modules
+jspm_packages
+
+# Logs and databases #
+############
+*.log
+
+# OS generated files #
+############
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+event.json
+
+# Java and Gradle #
+############
+build/
+.gradle/
+
+# IDE #
+############
+.idea
+
+# Serverless directories
+.serverless
