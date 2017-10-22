@@ -11,6 +11,7 @@ package:
       - ./src/node_modules
     exclude:
       - .serverless/**
+      - secrets.yml
     deDevDependencies: false
 
 functions:
@@ -19,3 +20,6 @@ functions:
     description: PMP function
     events:
       - alexaSkill
+custom:
+  stage: ${opt:stage, self:provider.stage}
+  secrets: ${file(secrets.yml):${self:custom.stage}}
