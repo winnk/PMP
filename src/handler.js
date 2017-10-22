@@ -4,6 +4,8 @@ var Alexa = require('alexa-sdk');
 
 // const ANSWER_COUNT = 2;
 // const GAME_LENGTH = 1;
+// var APP_ID = "amzn1.ask.skill.8bc9a7a3-6c83-4d35-a763-46bd5d102139";
+// const dotenv = require(secrets.env);
 
 var counter = 0;
 
@@ -15,11 +17,10 @@ var states = {
     OUTPUS: "_OUTPUTS"
 };
 
-var APP_ID = "amzn1.ask.skill.8bc9a7a3-6c83-4d35-a763-46bd5d102139";
-
 const FACTS = require('data/facts.json');
 const INPUTS = require('data/inputs');
 const GOODBYE = require('data/goodbye.json');
+const QUOTES = require('data/data');
 // const DATA = require('data/data.json');
 const SKILL_NAME = 'PMP Facts';
 const GET_FACT_MESSAGE= "Here's your fact: ";
@@ -27,18 +28,17 @@ const HELP_MESSAGE= 'You can say tell me a PM P fact, or, you can say quiz game,
 const HELP_REPROMPT='What can I help you with?';
 const STOP_MESSAGE = 'Goodbye!';
 
-const quotes = require('data/data');
-
-
 // Skill Code --------------------------------------------------
 // Routes incoming request based on type (LaunchRequest, IntentRequest,
 // etc.)
 
 console.info('Loading function');
+console.info(APP_ID);
 
 exports.handler = function(event, context, callback) {
     var alexa = Alexa.handler(event, context, callback);
     alexa.appId = APP_ID;
+      console.info(APP_ID);
     alexa.registerHandlers(handlers);
     alexa.execute();
     callback(null, "Success");

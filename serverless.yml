@@ -4,7 +4,10 @@ frameworkVersion: ">=1.4.0 <2.0.0"
 provider:
   name: aws
   runtime: nodejs4.3
+  stage: ${self:custom.stage}
   region: us-east-1
+  environment:
+    APP_IP: "${self:custom.secrets.APP_ID}"
 
 package:
     include:
@@ -20,6 +23,7 @@ functions:
     description: PMP function
     events:
       - alexaSkill
+
 custom:
   stage: ${opt:stage, self:provider.stage}
-  secrets: ${file(secrets.yml):${self:custom.stage}}
+  secrets: ${env:APP_ID, file(secrets.yml):${self:custom.stage.APP_ID}
