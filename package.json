@@ -1,7 +1,7 @@
 {
   "name": "pmpnow",
   "version": "1.0.0",
-  "description": "Custom skill for PMP exam preparation for Amazon Echo by Kaya.",
+  "description": "Custom skill for PMP exam preparation for Amazon Echo by Kaya Winn.",
   "main": "handler.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
